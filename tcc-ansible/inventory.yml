@@ -1,0 +1,29 @@
+all:
+  hosts:
+    ubuntu-node-1:
+      ansible_host: 100.29.40.74
+      ansible_user: ubuntu
+    ubuntu-node-2:
+      ansible_host: 107.23.191.88
+      ansible_user: ubuntu
+    redhat-node:
+      ansible_host: 18.206.200.238
+      ansible_user: ec2-user
+    debian-node:
+      ansible_host: 54.236.73.159
+      ansible_user: admin
+
+# Optionally, group your hosts
+ubuntu:
+  hosts:
+    ubuntu-node-1:
+    ubuntu-node-2:
+
+redhat:
+  hosts:
+    redhat-node:
+
+debian:
+  hosts:
+    debian-node:
+
